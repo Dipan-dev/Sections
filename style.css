@@ -1,0 +1,115 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Varela&display=swap');
+body{
+    background-color: antiquewhite;
+    font-family: "Varela", sans-serif;
+     
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    font-family: "Inter", sans-serif;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 89px;
+    background-color: black;
+    color: aliceblue;
+}
+
+.brand img {
+    width: 50px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.community-section{
+
+    width:100%;
+
+    min-height:100vh;
+
+    background:#000;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+.community-content{
+
+    max-width:1000px;
+
+}
+
+.community-content h1{
+
+    color:#fff;
+
+    font-size:72px;
+
+    font-weight:700;
+
+    margin-bottom:25px;
+
+}
+
+.community-content p{
+
+    color:#d6d6d6;
+
+    font-size:26px;
+
+    margin-bottom:40px;
+
+    line-height:1.5;
+
+}
+
+.community-content button{
+
+    background:#22d85c;
+
+    color:#000;
+
+    border:none;
+
+    padding:22px 70px;
+
+    font-size:30px;
+
+    font-weight:700;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    transition:0.3s ease;
+
+}
+
+.community-content button:hover{
+
+    transform:scale(1.05);
+
+}
