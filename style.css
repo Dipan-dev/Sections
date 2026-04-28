@@ -3,8 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Varela&display=swap');
 body{
     background-color: antiquewhite;
-    font-family: "Varela", sans-serif;
-     
+    font-family: "Inter", sans-serif;
 }
 
 * {
@@ -20,6 +19,7 @@ nav ul {
     display: flex;
     align-items: center;
     list-style-type: none;
+    justify-content: space-between;
     height: 89px;
     background-color: black;
     color: aliceblue;
@@ -27,6 +27,7 @@ nav ul {
 
 .brand img {
     width: 50px;
+    border-radius: 100px;
 }
 
 .brand {
@@ -34,6 +35,13 @@ nav ul {
     align-items: center;
     font-weight: bolder;
     font-size: 1.3rem;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-left: auto;
 }
 
 .community-section{
