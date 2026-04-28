@@ -19,15 +19,19 @@ nav ul {
     display: flex;
     align-items: center;
     list-style-type: none;
-    justify-content: space-between;
     height: 89px;
     background-color: black;
     color: aliceblue;
 }
 
+nav ul li {
+    padding: 0 12px;
+}
+
 .brand img {
     width: 50px;
     border-radius: 100px;
+    padding: 8px;
 }
 
 .brand {
@@ -37,11 +41,36 @@ nav ul {
     font-size: 1.3rem;
 }
 
-.nav-links {
+.container {
+    min-height: 80vh;
+    background-color: #000;
+    color: #fff;
+    font-family: "Verela", sans-serif;
     display: flex;
+}
+
+.bottom {
+    position: sticky;
+    background-color: #000;
+    color: azure;
+    height: 130px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    gap: 40px;
-    margin-left: auto;
+}
+
+.icons {
+    margin-top: 10px;
+}
+
+.icons i:hover {
+    cursor: pointer;
+}
+/*targeting id="myProgressBar"*/
+#myProgressBar {
+    min-width: 75vh;
 }
 
 .community-section{
