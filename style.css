@@ -42,11 +42,16 @@ nav ul li {
 }
 
 .container {
-    min-height: 80vh;
+    min-height: 75vh;
     background-color: #000;
     color: #fff;
-    font-family: "Verela", sans-serif;
+    font-family: "Varela", sans-serif;
     display: flex;
+    margin: 20px auto;
+    width: 70%;
+    border-radius: 13px;
+    padding: 20px;
+    background-image: url(Assets/ncs.png);
 }
 
 .bottom {
