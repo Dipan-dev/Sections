@@ -78,6 +78,14 @@ nav ul li {
     min-width: 75vh;
 }
 
+.songItem {
+    display: flex;
+}
+
+.songItem img {
+    width: 50px;
+}
+
 .community-section{
 
     width:100%;
