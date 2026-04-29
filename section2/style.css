@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Varela&display=swap');
+body{
+    background-color: antiquewhite;
+    font-family: "Inter", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    font-family: "Inter", sans-serif;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 89px;
+    background-color: black;
+    color: aliceblue;
+}
+
+nav ul li {
+    padding: 0 12px;
+}
+
+.brand img {
+    width: 50px;
+    border-radius: 100px;
+    padding: 8px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.container {
+    min-height: 75vh;
+    background-color: #000;
+    color: #fff;
+    font-family: "Varela", sans-serif;
+    display: flex;
+    margin: 20px auto;
+    width: 70%;
+    border-radius: 13px;
+    padding: 20px;
+    background-image: url(Assets/ncs.png);
+}
+
+.bottom {
+    position: sticky;
+    background-color: #000;
+    color: azure;
+    height: 130px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons {
+    margin-top: 10px;
+}
+
+.icons i:hover {
+    cursor: pointer;
+}
+/*targeting id="myProgressBar"*/
+#my-progress-bar {
+    min-width: 75vh;
+}
+
+.song-item  {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 18px;
+    height: 50px;
+    background-color: aliceblue;
+    width: ;
+    margin: 12px 0;
+    color: #000;
+}
+
+.song-item i {
+    padding:  0 7px;
+}
+
+
+.song-item img {
+    width: 50px;
+    margin: 0 20px;
+    border-radius: 10px;
+}
