@@ -1,2 +1,109 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: linear-gradient(#000000 100%,#16005c 100%);
+}
+
+.hero {
+    position: relative;
+    max-width: 1920px;
+    min-height: 872px;
+    background: radial-gradient(ellipse, #12304c 0%,#071726 100%);
+    opacity: 100%;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.hero-inner {
+    display: flex;
+    max-width: 1446px;
+    height: 403px;
+    align-items: center;
+    margin: 0 auto;       /* centers the row on the page */
+    padding: 80px 72px;
+    gap: 60px;
+    opacity: 100%;
+}
+
+.content  {
+    flex: 0 0 55%; /* don't grow, don't shrink, stay exactly 48% wide */
+    max-width: 55%;
+    gap: 25px;
+    color: #ffffff;
+}
+
+.content h1 {
+    color: #ffffff;
+    width: 1446px;
+    height: 79px;
+    font-size: 65;
+}
+
+.content p {
+    display: flex;
+    flex-direction: column;
+    width: 673px;
+    min-height: 197px;
+    line-height: auto;
+    color: #ffffff;
+    font-size: 20;
+    gap: 25px;
+   /* margin-top: 8px;*/
+}
+
+.hero-visual {
+    flex: 1;
+}
+
+
+.cta-button {
+    width: 231px;
+    height: 72px;
+    border-radius: 45px;
+    text-align: center;
+    text-decoration: none;
+   /* margin-top: 10px;*/
+    padding: 25px 45px;
+    gap: 30px;
+    opacity: 100%;
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: bolder;
+    font-size: 18;
+}
+
+.cta-button:hover {
+    
+}
+
+@media (max-width: 900px) {
+    .hero-inner {
+      flex-direction: column;
+      padding: 60px 32px;
+      font-size: 28;
+  }
+  .hero-content {
+    flex: unset;     /* removes the 48% constraint */
+    max-width: 100%; /* takes full width */
+  }
+
+  .hero-visual {
+    width: 100%;     /* illustration also goes full width */
+  }
+
+  .cta-button {
+    width: 160px;
+    height: 80px;
+    padding: 25px 45px;
+    border-radius: 45px;
+  }
+
+}
