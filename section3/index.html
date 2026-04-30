@@ -25,12 +25,130 @@
         </div>
         <div class="hero-visual">
           <div class="visual-platform">
-            <svg id="hero-svg" viewBox="1066 179 665 625">
-              
-              <defs>
-                <ellipse cx="374" cy="105" rx="23" ry="40" fill="#00e8d8" />
-              </defs>
+            <svg width="665" height="625">
+              <ellipse class="chatbot-head" cx="374" cy="105" rx="23" ry="40" fill="#42E8E0"/>
+              <!-- Top face -->
+              <polygon points="398,108 434,90 470,108 434,126" fill="#9aa0d8" />
 
+              <!-- Left face -->
+              <polygon
+                points="398,108 398,138 434,156 434,126"
+                fill="#7880c8"
+              />
+
+              <!-- Right face -->
+              <polygon
+                points="470,108 470,138 434,156 434,126"
+                fill="#8890d0"
+              />
+              <!-- Top face — wide flat rhombus -->
+              <polygon
+                points="110,308 285,215 460,308 285,401"
+                fill="#00e8d8"
+              />
+
+              <!-- Front-left face -->
+              <polygon
+                points="110,308 110,382 285,475 285,401"
+                fill="#009e94"
+              />
+
+              <!-- Front-right face -->
+              <polygon
+                points="460,308 460,382 285,475 285,401"
+                fill="#00b8aa"
+              />
+              <polygon
+                points="110,338 285,245 460,338 285,431"
+                fill="#002826"
+                opacity="0.5"
+              />
+              <!-- Head -->
+              <circle cx="280" cy="145" r="44" fill="#5a6fe8" />
+
+              <!-- Eye dark background -->
+              <circle cx="280" cy="145" r="16" fill="#001816" />
+
+              <!-- Eye cyan glow -->
+              <circle cx="280" cy="145" r="10" fill="#00f0e0" />
+
+              <!-- Eye specular highlight (small white dot) -->
+              <circle cx="276" cy="141" r="3" fill="rgba(255,255,255,0.6)" />
+
+              <path d="M 88 428 A 40 40 0 0 1 168 428 Z" fill="#00d8c8" />
+              <!-- Horizontal lines -->
+              <line
+                x1="392"
+                y1="432"
+                x2="536"
+                y2="432"
+                stroke="#00d8c8"
+                stroke-width="1"
+              />
+              <line
+                x1="392"
+                y1="452"
+                x2="536"
+                y2="452"
+                stroke="#00d8c8"
+                stroke-width="1"
+              />
+
+              <!-- Vertical lines -->
+              <line
+                x1="412"
+                y1="412"
+                x2="412"
+                y2="492"
+                stroke="#00d8c8"
+                stroke-width="1"
+              />
+              <line
+                x1="442"
+                y1="412"
+                x2="442"
+                y2="492"
+                stroke="#00d8c8"
+                stroke-width="1"
+              />
+
+              <!-- Corner bracket — 3 lines forming an L shape -->
+              <line
+                x1="536"
+                y1="412"
+                x2="560"
+                y2="388"
+                stroke="#00d8c8"
+                stroke-width="1.5"
+              />
+              <line
+                x1="536"
+                y1="492"
+                x2="560"
+                y2="492"
+                stroke="#00d8c8"
+                stroke-width="1.5"
+              />
+              <line
+                x1="560"
+                y1="388"
+                x2="560"
+                y2="492"
+                stroke="#00d8c8"
+                stroke-width="1.5"
+              />
+              <defs>
+                <filter id="glow">
+                  <feGaussianBlur stdDeviation="8" result="blur"/>
+                  <feMerge>
+                    <feMergeNode in="blur"/>       <!-- blurred copy behind -->
+                    <feMergeNode in="SourceGraphic"/> <!-- sharp original on top -->
+                  </feMerge>
+                </filter>
+              </defs>
+              
+              <!-- Apply it to any shape -->
+              <circle cx="280" cy="145" r="10" fill="#00f0e0" filter="url(#glow)" />
             </svg>
           </div>
         </div>

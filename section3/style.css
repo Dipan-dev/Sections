@@ -87,7 +87,7 @@ body {
     height: 625px;
 }
 
-.visual-platform {
+/*.visual-platform {
     position: absolute;
     bottom: 0;
     transform: translate(1066px, 179px);
@@ -95,7 +95,7 @@ body {
     background: linear-gradient(#42E8E0 100%,#42E6DF 100%, #40B6CB 100%, #3E8DB9 100%, #3C6BAA 100%);
 }
 
-.chatbot-head,
+/*.chatbot-head,
 .chatbot-body {
     position: absolute;
     width: 114px;
@@ -104,7 +104,7 @@ body {
     border-radius: 50;
     z-index: 15%;
     opacity: 0.9;
-}
+}*/
 
 .chatbot-head {
     width: 100px;
@@ -115,7 +115,7 @@ body {
     box-shadow: 0 10px 30px rgba(66, 153, 227, 0.5);
 }
 
-.abstract-shape {
+/*.abstract-shape {
     position: absolute;
     opacity: 0.6;
     filter: blur(5px);
@@ -131,7 +131,7 @@ body {
     border-radius: 50%;
     transform: rotate(-10deg);
     opacity: 0.9%
-}
+}*/
 
 @media (max-width: 900px) {
     .hero-inner {
