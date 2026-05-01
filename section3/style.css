@@ -8,7 +8,7 @@
 
 body {
     font-family: "Inter", sans-serif;
-    background: linear-gradient(90deg,#000000 100%,#16005c 100%);
+    background: radial-gradient(ellipse, #12304c 0%,#071726 100%);
 }
 
 .hero {
@@ -81,57 +81,25 @@ body {
 }
 
 .hero-visual {
-    flex: 1;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    min-width: 665px;
+    overflow: visible;
+    min-width: 0;
+}
+
+.visual-platform {
+    position: relative;
+    width: 666px;
     height: 625px;
-}
-
-/*.visual-platform {
-    position: absolute;
     bottom: 0;
-    transform: translate(1066px, 179px);
     opacity: 100%;
-    background: linear-gradient(#42E8E0 100%,#42E6DF 100%, #40B6CB 100%, #3E8DB9 100%, #3C6BAA 100%);
+    overflow: visible;
+    display: block;
 }
 
-/*.chatbot-head,
-.chatbot-body {
-    position: absolute;
-    width: 114px;
-    height: 114px;
-    background: radial-gradient(circle at #42E8E0 0,#42E6DF 0, #40B6CB 14%, #3E8DB9 27%, #3C6BAA 41%, #3B519F 55%, #3A3F97 69%, #393493 84%, #393091 100%);
-    border-radius: 50;
-    z-index: 15%;
-    opacity: 0.9;
-}*/
-
-.chatbot-head {
-    width: 100px;
-    height: 100px;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    box-shadow: 0 10px 30px rgba(66, 153, 227, 0.5);
-}
-
-/*.abstract-shape {
-    position: absolute;
-    opacity: 0.6;
-    filter: blur(5px);
-    z-index: 5;
-}
-
-.s1 {
-    top: 10%;
-    left: 5%;
-    width: 100px;
-    height: 100px;
-    background: radial-gradient(circle, #42E6DF 100%, transparent 70%);
-    border-radius: 50%;
-    transform: rotate(-10deg);
-    opacity: 0.9%
-}*/
 
 @media (max-width: 900px) {
     .hero-inner {
@@ -139,15 +107,25 @@ body {
       padding: 60px 32px;
       font-size: 28;
   }
-  .hero-content {
-    flex: unset;     /* removes the 48% constraint */
-    max-width: 100%; /* takes full width */
+  .content {
+    flex: content;   
+    max-width: 420px; /* takes full width */
   }
-
+  .content p {
+    display: flex;
+    max-width: 420px;
+    font-size: 18;
+  }
   .hero-visual {
-    width: 100%;     /* illustration also goes full width */
+    flex: 1;
+    width: 100%;                /* takes full width when stacked */
+    max-width: 480px;           /* but caps so it doesn't look giant */
+    margin: 0;             /* centers it */
   }
-
+ 
+  .visual-platform {            
+    width: 100%;
+  }
   .cta-button {
     width: 160px;
     height: 80px;
