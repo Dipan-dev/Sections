@@ -30,6 +30,7 @@ section {
     position: relative;
     object-fit: contain;
     overflow: hidden;
+    border-radius: 10px;
     width: 706px;
     height: 679px;
 }
@@ -52,6 +53,7 @@ section {
     height: 330px;
     font-family: "Inter", sans-serif;
     font-size: 18;
+    gap: 10px;
 }
 
 .content ul {
