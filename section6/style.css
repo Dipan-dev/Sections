@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;   
+    font-family: "Inter", sans-serif;
+}
+
+.cta-section {
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+    background: radial-gradient(ellipse, #12304C 0%, #071726 100%);
+    position: absolute;
+    
+       max-width: 1920px;
+       min-height: 460px;
+       
+}
+
+.red-dots {
+    max-width: 780px;
+    height: 80px;
+}
+
+.cta-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 100px;
+}
+
+.cta-content  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    border-spacing: 40;
+    max-width: 1013px;
+    min-height: 311px;
+    color: #FFFFFF;
+}
+
+.cta-visual {
+    width: 422px;
+    height: 378px;
+}
+
+.btn-cta {
+    text-decoration: none;
+    font-size: 25;
+    display: flex;
+    align-items: center;
+    color: #071726;
+    background-color: #FFFFFF;
+    border-radius: 156px;
+    padding: 10px 41px;
+    max-width: 187px;
+    height: 62px;
+    gap: 10px;
+}
+
+@media (max-width: 900px) {
+    .cta-content {
+        flex: unset;
+        max-width: 100%;
+    }
+    .cta-inner {
+        gap: 20;
+    }
+    .cta-visual {
+        width: 100%;
+        max-width: 420px;
+    }
+}
+
+@media (max-width: 560px) {
+    .cta-inner {
+        padding: 40px 24px;
+    }
+    .cta-content {
+        max-width: 100%;
+        font-size: 25px;
+    }
+    .cta-visual {
+        height: auto;
+    }
+}
