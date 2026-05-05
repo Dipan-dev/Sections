@@ -39,9 +39,16 @@ body {
     border-spacing: 40;
     max-width: 1013px;
     min-height: 311px;
-    color: #FFFFFF;
 }
 
+h1 {
+    font-size: 40;
+    color: #FFFFFF;
+}
+p {
+    font-size: medium;
+    color: #d0d0d0;
+}
 .cta-visual {
     width: 422px;
     height: 378px;

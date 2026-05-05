@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: "Inter", sans-serif;
+}
+
+.cta-section {
+    background: radial-gradient(circle, #12304C 0%, #071726 100%);
+    position: absolute;
+    max-width: 1920px;
+    min-height: 460px;
+}
+
+.red-dots {
+    width: 784px;
+    height: 30px;
+}
+
+.cta-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 40px 100px;
+}
+
+.cta-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1013px;
+    height: 300px;
+    gap: 10px;
+}
+h1 {
+    font-size: 40;
+    color: #FFFFFF;
+}
+
+ p {
+    font-size: medium;
+    color: #D0D0D0;
+}
+.my-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 187px;
+    height: 62px;
+    border-radius: 156px;
+    background-color: #FFFFFF;
+    color: #071726;
+    font-size: 25;
+    padding: 10px 41px;
+    gap: 10px;
+}
+.cta-visual {
+    width: 422px;
+    height: 377px;
+}
+
+@media (max-width: 900px) {
+    .cta-content {
+        flex: unset;
+        max-width: 100%;
+    }
+    .cta-inner {
+        gap: 20;
+    }
+    .cta-visual {
+        width: 100%;
+        max-width: 420px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cta-inner {
+        padding: 40px 24px;
+    }
+    .cta-content {
+        max-width: 70%;
+        font-size: 25px;
+    }
+    .cta-visual {
+        height: auto;
+    }
+}
