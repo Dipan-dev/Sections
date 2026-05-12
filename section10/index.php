@@ -275,11 +275,24 @@
             border: 1px solid #e2e8f0;
             transition: .45s;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+            position: relative;
+            overflow: hidden;
         }
 
         .team-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.08);
+
+
+
+            box-shadow:
+
+                0 0 20px rgba(59, 130, 246, 0.35),
+
+                0 0 40px rgba(59, 130, 246, 0.25),
+
+                0 25px 60px rgba(0, 0, 0, 0.12);
+
+            border-color: rgba(59, 130, 246, 0.5);
         }
 
         .team-inner {
@@ -440,10 +453,61 @@
             font-size: 18px;
         }
 
-        .culture-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 24px;
+        .culture-card {
+            position: relative;
+            overflow: hidden;
+
+            padding: 34px;
+            border-radius: 28px;
+
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+
+            backdrop-filter: blur(14px);
+
+            transition: all .45s ease;
+
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        /* GLOW HOVER */
+        .culture-card:hover {
+            transform: translateY(-10px);
+
+            border-color: rgba(59, 130, 246, 0.5);
+
+            box-shadow:
+                0 0 20px rgba(59, 130, 246, 0.35),
+                0 0 45px rgba(14, 165, 233, 0.25),
+                0 25px 60px rgba(0, 0, 0, 0.18);
+        }
+
+        /* PREMIUM GLOW LAYER */
+        .culture-card::before {
+            content: "";
+            position: absolute;
+            inset: -2px;
+
+            background: linear-gradient(135deg,
+                    rgba(59, 130, 246, 0.45),
+                    transparent,
+                    rgba(14, 165, 233, 0.35));
+
+            opacity: 0;
+
+            transition: .45s ease;
+
+            z-index: 0;
+        }
+
+        .culture-card:hover::before {
+            opacity: 1;
+        }
+
+        /* KEEP CONTENT ABOVE GLOW */
+        .culture-card>* {
+            position: relative;
+            z-index: 1;
         }
 
         .culture-card {
@@ -478,7 +542,7 @@
 
         .cta-box {
             padding: 80px;
-            border-radius: 40px;
+            border-radius: 20px;
             text-align: center;
             background: linear-gradient(to right, #00152e, #002B5B, #003d82);
             color: #fff;
